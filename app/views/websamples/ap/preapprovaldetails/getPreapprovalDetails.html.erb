@@ -17,10 +17,10 @@
 
 <div id="request_form">
 <h3><b>Adaptive Payments-Preapproval Details</b></h3>  
-<%  form_tag (preapprovaldetails_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> <table  align="center">
+<%= form_tag(preapprovaldetails_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> <table  align="center">
 	<tr>
  		<td><label for="preapprovalkey">Preapproval Key: (Required)</label></td>
-            <td><%=text_field_tag ("preapprovalkey", value = @paykey, :size => 50) %></td>
+            <td><%=text_field_tag("preapprovalkey", value = @paykey, :size => 50) %></td>
 	</tr>
 	<tr></tr>
 </table>

@@ -38,7 +38,7 @@ function PrePopulate()
 <br/>
 
 <%= javascript_include_tag "creditcard.js" %>
-  <%=  form_tag (addcard_path, :method=>'post', :multipart => true, :id =>'AddPaymentCardForm', :name => 'AddPaymentCardForm') do %>
+  <%=  form_tag(addcard_path, :method=>'post', :multipart => true, :id =>'AddPaymentCardForm', :name => 'AddPaymentCardForm') do %>
 <table  align="center">
 	<tr>
  		<td><label for="email">email Id:</label></td>

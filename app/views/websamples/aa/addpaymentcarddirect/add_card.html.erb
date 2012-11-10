@@ -41,7 +41,7 @@ document.getElementById('cardVerificationNumber').value = "956";
 <br/>
 <%= javascript_include_tag "creditcard.js" %>
   
-<%=  form_tag (addcardDirect_path, :method=>'post', :multipart => true, :id =>'AddPaymentCardDirectForm', :name => 'AddPaymentCardDirectForm') do %>
+<%=  form_tag(addcardDirect_path, :method=>'post', :multipart => true, :id =>'AddPaymentCardDirectForm', :name => 'AddPaymentCardDirectForm') do %>
 <table  align="center">
 	<tr>
  		<td> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   <label for="email">email Id:</label></td>

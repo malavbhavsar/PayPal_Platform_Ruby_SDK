@@ -19,7 +19,7 @@
 
 <h3 align="center"><u>Pay - Create, Set, Execute API Flow</u></h3>
 <h3 align="center"> Adaptive Payments - ExecutePay</h3>
-<%  form_tag (executepay_path, :method=>'post', :multipart => true, :id => 'Form1',:name=> 'Form1') do %><table  align="center">
+<%= form_tag(executepay_path, :method=>'post', :multipart => true, :id => 'Form1',:name=> 'Form1') do %><table  align="center">
 	<tr>
  		<td><label for="paykey">Pay Key:</label></td>
 		<td><%= text_field_tag( "paykey", value = @paykey,:size => 50) %> </td>

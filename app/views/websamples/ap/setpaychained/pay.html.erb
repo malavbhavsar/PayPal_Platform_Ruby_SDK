@@ -39,7 +39,7 @@ function PrePopulate()
 					<a onclick="PrePopulate()"><span>Populate default values</span></a>
 				</center>
 				<br/>
-<%  form_tag (setpaychained_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> 
+<%= form_tag(setpaychained_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %>
  <table  align="center">
 	<tr>
  		<td align="left"> <label for="email">Sender's Email:</label></td>

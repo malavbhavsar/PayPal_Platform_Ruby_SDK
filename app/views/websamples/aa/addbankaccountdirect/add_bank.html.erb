@@ -31,7 +31,7 @@ function PrePopulate()
 	<a onclick="PrePopulate()"><span>Populate default values</span></a>
 </center>
 <br/>
-  <%=  form_tag (addbankDirect_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %><table  align="center">
+  <%=  form_tag(addbankDirect_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %><table  align="center">
 	<tr>
  		<td><label for="email">email Id:</label></td>
 		<td><%= text_field_tag( "email", value = '',:size => 50, :maxlength => 80) %> </td>

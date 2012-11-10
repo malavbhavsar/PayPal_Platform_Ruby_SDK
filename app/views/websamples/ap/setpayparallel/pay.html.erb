@@ -34,17 +34,17 @@ function PrePopulate()
 		<a onclick="PrePopulate()"><span>Populate default values</span></a>
 				</center>
 				<br/>
-<%  form_tag (setpayparallel_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %>
+<%= form_tag(setpayparallel_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %>
 <table  align="center">
 	<tr>
  		<td><label for="email">Sender's Email:</label></td>
 		<td><%= text_field_tag( "email", value = '',:size => 75) %> </td>
 	</tr>
 	<tr>
- 		<td><label for="memo">Memo:</label></td><td><%= text_field_tag ("memo", value = '', :size => 50) %></td>
+ 		<td><label for="memo">Memo:</label></td><td><%= text_field_tag("memo", value = '', :size => 50) %></td>
 	</tr>
 	<tr>
- 		<td><label for="feesPayer">Fees Payer:</label></td><td><%= text_field_tag ("feespayer", value = '', :size => 50) %></td>
+ 		<td><label for="feesPayer">Fees Payer:</label></td><td><%= text_field_tag("feespayer", value = '', :size => 50) %></td>
 	</tr>
 	<tr>
  		<td>currencyCode:</td><td><%=currency_select_for(:setpayparallel) %></td>

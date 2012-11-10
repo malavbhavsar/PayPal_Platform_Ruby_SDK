@@ -19,10 +19,10 @@
 
 <h3 align="center">  Adaptive Payments - Cancel Preapproval</h3>  
 
-<%  form_tag (cancelPreapproval_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> <table  align="center">
+<%=  form_tag(cancelPreapproval_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> <table  align="center">
 	<tr>
  		<td><label for="preapprovalkey">Preapproval Key: (Required)</label></td>
-            <td><%=text_field_tag ("preapprovalkey", value = '', :size => 50) %></td>
+            <td><%=text_field_tag("preapprovalkey", value = '', :size => 50) %></td>
 	</tr>
 <tr></tr>
 </table>

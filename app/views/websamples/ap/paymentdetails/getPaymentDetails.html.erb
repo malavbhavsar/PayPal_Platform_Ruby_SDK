@@ -17,11 +17,11 @@
 
 <div id="request_form">
 <h3 align="center">Adaptive Payments - GetPaymentDetails</h3>  
-  <%  form_tag (paydetails_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> 
+  <%= form_tag(paydetails_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %>
 <table  align="center">
 	<tr>
  		<td><label for="paykey">PayKey: (Required)</label></td>
-            <td><%=text_field_tag ("paykey", value = @paykey, :size => 50) %></td>
+            <td><%=text_field_tag("paykey", value = @paykey, :size => 50) %></td>
 	</tr>
 	<tr></tr>
 </table>
