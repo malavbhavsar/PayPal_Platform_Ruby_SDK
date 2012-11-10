@@ -70,10 +70,12 @@ module PayPalSDKCallers
       contents,unparseddata = http.post2(@@ep["SERVICE"],req_data,@@headers)   
       @@PayPalLog.info "\n"
       @@PayPalLog.info "#{Time.now.strftime("%a %m/%d/%y %H:%M %Z")}- RECEIVED:"
-      @@PayPalLog.info "#{CGI.unescape(unparseddata)}"   
+      #@@PayPalLog.info "#{CGI.unescape(unparseddata)}"
 
-      data = CGI::parse(unparseddata)        
-      transaction = Transaction.new(data)         
+      data = CGI::parse(contents.body)
+      data2 = Hash.new
+      data.each {|k,v| data2[k] = v[0]}
+      transaction = Transaction.new(data2)
     end    
   end
   # Wrapper class to wrap response hash from PayPal as an object and to provide nice helper methods
