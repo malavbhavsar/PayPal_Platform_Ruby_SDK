@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Set PaymentOption</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+<script type="text/javascript">
+function PrePopulate()
+{
+	document.getElementById('headerImage').value = "http://bankone.com/images/emailHeaderImage.jpg";
+	document.getElementById('marketingImage').value = "http://bankone.com/images/emailMarketingImage.jpg";
+	
+}
+</script>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+
+<h3 align="center"><u>Pay - Create, Set, Execute API Flow</u></h3>
+<center>
+	<h3><b>Adaptive Payments - SetPaymentOption</b></h3>
+	<a onclick="PrePopulate()"><span>Populate default values</span></a>
+			</center>
+			<br/>
+
+
+
+<%  form_tag (setPaymentOption_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %><table  align="center">
+
+	<tr>
+ 		<td><label for="paykey">Pay Key:</label></td>
+	     <td><%= text_field_tag( "paykey", value = @paykey,:size => 75) %> </td>
+	</tr>
+
+	<tr>		
+  		<td colspan="3"><p align="center"><b>Financial Partner Detail:(Optional)</b></p></td>
+	</tr>
+	<tr>
+ 		<td><label for="countryCode">Country Code:</label></td>
+		<td><%= text_field_tag( "countryCode", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="displayName">Name:</label></td>
+		<td><%= text_field_tag( "displayName", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="email">Email:</label></td>
+		<td><%= text_field_tag( "email", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="firstName">First Name:</label></td>
+		<td><%= text_field_tag( "firstName", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="lastName">Last Name:</label></td>
+		<td><%= text_field_tag( "lastName", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="customerId">CustomerId:</label></td>
+		<td><%= text_field_tag( "customerId", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="institutionId">InstitutionId:</label></td>
+		<td><%= text_field_tag( "institutionId", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>		
+  		<td colspan="3"><p align="center"><b>Display Option:(Optional)</b></p></td>
+	</tr>
+	<tr>
+ 		<td><label for="headerImage">Email Header Image:</label></td>
+		<td><%= text_field_tag( "headerImage", value = '',:size => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="marketingImage">Email Marketing Image:</label></td>
+		<td><%= text_field_tag( "marketingImage", value = '',:size => 80) %> </td>
+	</tr>
+	<tr></tr>
+	<tr>
+      	<td align="center"><a class="pop-button primary" onclick="Form1.submit();" id="Submit"><span>Submit</span></a>
+</td>
+	</tr>
+	
+</table>
+</div>
+</body>
+</html>
+<%end%>
+
+

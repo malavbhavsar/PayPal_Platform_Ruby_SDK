@@ -1,0 +1,198 @@
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: actionType=CREATE&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:19.534-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=8b2949977cc22&responseEnvelope.build=1609281&payKey=AP-5BJ34675240792518&paymentExecStatus=CREATED&defaultFundingPlan.fundingPlanId=0&defaultFundingPlan.fundingAmount.code=USD&defaultFundingPlan.fundingAmount.amount=2.00&defaultFundingPlan.backupFundingSource.lastFourOfAccountNumber=1128&defaultFundingPlan.backupFundingSource.type=CREDITCARD&defaultFundingPlan.charge(0).charge.code=USD&defaultFundingPlan.charge(0).charge.amount=2.00&defaultFundingPlan.charge(0).fundingSource.type=BALANCE
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&payKey=AP-5BJ34675240792518&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:21.131-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=9ff3ae2a7d3d5&responseEnvelope.build=1609281
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: payKey=AP-5BJ34675240792518&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:24.490-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=9628b1647dacd&responseEnvelope.build=1609281&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: payKey=AP-5BJ34675240792518&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:25.984-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=450a4c197e6dc&responseEnvelope.build=1609281
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: actionType=PAY&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:29.326-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=4e0e8d967ed02&responseEnvelope.build=1609281&payKey=AP-1DP07042KG230404T&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: payKey=AP-1DP07042KG230404T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:31.473-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=8024f9db7fa67&responseEnvelope.build=1609281&cancelUrl=http://www.hawaii.edu&currencyCode=USD&paymentInfoList.paymentInfo(0).transactionId=50764108144830646&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(0).receiver.amount=1.00&paymentInfoList.paymentInfo(0).receiver.email=platfo_1255612361_per@gmail.com&paymentInfoList.paymentInfo(0).receiver.primary=false&paymentInfoList.paymentInfo(0).refundedAmount=0.00&paymentInfoList.paymentInfo(0).pendingRefund=false&paymentInfoList.paymentInfo(0).senderTransactionId=4M4925404D415142B&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).transactionId=9FX56809707081927&paymentInfoList.paymentInfo(1).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).receiver.amount=1.00&paymentInfoList.paymentInfo(1).receiver.email=platfo_1255611349_biz@gmail.com&paymentInfoList.paymentInfo(1).receiver.primary=false&paymentInfoList.paymentInfo(1).refundedAmount=0.00&paymentInfoList.paymentInfo(1).pendingRefund=false&paymentInfoList.paymentInfo(1).senderTransactionId=07Y149776D8408000&paymentInfoList.paymentInfo(1).senderTransactionStatus=COMPLETED&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&status=COMPLETED&payKey=AP-1DP07042KG230404T&actionType=PAY&feesPayer=EACHRECEIVER&reverseAllParallelPaymentsOnError=false&sender.email=platfo_1255077030_biz@gmail.com
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: currencyCode=USD&payKey=AP-1DP07042KG230404T&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:33.219-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=679de60380295&responseEnvelope.build=1609281&currencyCode=USD&refundInfoList.refundInfo(0).receiver.amount=1.00&refundInfoList.refundInfo(0).receiver.email=platfo_1255611349_biz@gmail.com&refundInfoList.refundInfo(0).refundStatus=NO_API_ACCESS_TO_RECEIVER
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: cancelUrl=http://www.return.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&endingDate=2011-02-19&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&requestEnvelope.errorLanguage=en_US&requestEnvelope.senderEmail=platfo_1255076101_per@gmail.com&returnUrl=http://www.hawaii.com&startingDate=2010-11-23&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:34.873-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=49eec2b1809d8&responseEnvelope.build=1609281&preapprovalKey=PA-0LN6308058301474B
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: preapprovalKey=PA-0LN6308058301474B&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:36.382-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=0ec01e3180feb&responseEnvelope.build=1609281&approved=false&cancelUrl=http://www.return.edu&curPayments=0&curPaymentsAmount=0.00&curPeriodAttempts=0&currencyCode=USD&dateOfMonth=0&dayOfWeek=NO_DAY_SPECIFIED&endingDate=2011-02-19T23:59:34.000-08:00&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&paymentPeriod=NO_PERIOD_SPECIFIED&pinType=NOT_REQUIRED&returnUrl=http://www.hawaii.com&startingDate=2010-11-23T00:00:34.000-08:00&status=ACTIVE
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: preapprovalKey=PA-0LN6308058301474B&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:37.867-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=ee546186815b8&responseEnvelope.build=1609281
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - SENT: baseAmountList.currency(0).amount=1.00&baseAmountList.currency(0).code=GBP&baseAmountList.currency(1).amount=1.00&baseAmountList.currency(1).code=EUR&convertToCurrencyList.currencyCode(0)=USD&convertToCurrencyList.currencyCode(1)=CAD&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:17 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:47:39.553-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=87c337ed81b83&responseEnvelope.build=1609281&estimatedAmountTable.currencyConversionList(0).baseAmount.code=GBP&estimatedAmountTable.currencyConversionList(0).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).amount=1.94&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).amount=2.17&estimatedAmountTable.currencyConversionList(1).baseAmount.code=EUR&estimatedAmountTable.currencyConversionList(1).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).amount=1.32&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).amount=1.47
+Tue 11/23/10 18:17 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: actionType=CREATE&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:31.363-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=86b558cb8e4e3&responseEnvelope.build=1609281&payKey=AP-44Y23609488061800&paymentExecStatus=CREATED&defaultFundingPlan.fundingPlanId=0&defaultFundingPlan.fundingAmount.code=USD&defaultFundingPlan.fundingAmount.amount=2.00&defaultFundingPlan.backupFundingSource.lastFourOfAccountNumber=1128&defaultFundingPlan.backupFundingSource.type=CREDITCARD&defaultFundingPlan.charge(0).charge.code=USD&defaultFundingPlan.charge(0).charge.amount=2.00&defaultFundingPlan.charge(0).fundingSource.type=BALANCE
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&payKey=AP-44Y23609488061800&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:32.952-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=338601ab8ecb0&responseEnvelope.build=1609281
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: payKey=AP-44Y23609488061800&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:36.256-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=08d3ad898f2dc&responseEnvelope.build=1609281&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: payKey=AP-44Y23609488061800&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:37.817-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=b83c7a088ffd7&responseEnvelope.build=1609281
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: actionType=PAY&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:41.636-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=12cf4542905ca&responseEnvelope.build=1609281&payKey=AP-8BG44329D1772450L&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: payKey=AP-8BG44329D1772450L&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:43.743-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=a0a4019491477&responseEnvelope.build=1609281&cancelUrl=http://www.hawaii.edu&currencyCode=USD&paymentInfoList.paymentInfo(0).transactionId=8HB970449C3578800&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(0).receiver.amount=1.00&paymentInfoList.paymentInfo(0).receiver.email=platfo_1255612361_per@gmail.com&paymentInfoList.paymentInfo(0).receiver.primary=false&paymentInfoList.paymentInfo(0).refundedAmount=0.00&paymentInfoList.paymentInfo(0).pendingRefund=false&paymentInfoList.paymentInfo(0).senderTransactionId=2WG27179D2835781M&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).transactionId=20X140681J1540318&paymentInfoList.paymentInfo(1).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).receiver.amount=1.00&paymentInfoList.paymentInfo(1).receiver.email=platfo_1255611349_biz@gmail.com&paymentInfoList.paymentInfo(1).receiver.primary=false&paymentInfoList.paymentInfo(1).refundedAmount=0.00&paymentInfoList.paymentInfo(1).pendingRefund=false&paymentInfoList.paymentInfo(1).senderTransactionId=39872313VL839631G&paymentInfoList.paymentInfo(1).senderTransactionStatus=COMPLETED&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&status=COMPLETED&payKey=AP-8BG44329D1772450L&actionType=PAY&feesPayer=EACHRECEIVER&reverseAllParallelPaymentsOnError=false&sender.email=platfo_1255077030_biz@gmail.com
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: currencyCode=USD&payKey=AP-8BG44329D1772450L&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:45.615-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=09b080d991d5e&responseEnvelope.build=1609281&currencyCode=USD&refundInfoList.refundInfo(0).receiver.amount=1.00&refundInfoList.refundInfo(0).receiver.email=platfo_1255611349_biz@gmail.com&refundInfoList.refundInfo(0).refundStatus=NO_API_ACCESS_TO_RECEIVER
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: cancelUrl=http://www.return.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&endingDate=2011-02-19&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&requestEnvelope.errorLanguage=en_US&requestEnvelope.senderEmail=platfo_1255076101_per@gmail.com&returnUrl=http://www.hawaii.com&startingDate=2010-11-23&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:46.973-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=9b23eafb923b5&responseEnvelope.build=1609281&preapprovalKey=PA-3Y550670E9113332T
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: preapprovalKey=PA-3Y550670E9113332T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:48.305-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=b265bc2b928e8&responseEnvelope.build=1609281&approved=false&cancelUrl=http://www.return.edu&curPayments=0&curPaymentsAmount=0.00&curPeriodAttempts=0&currencyCode=USD&dateOfMonth=0&dayOfWeek=NO_DAY_SPECIFIED&endingDate=2011-02-19T23:59:46.000-08:00&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&paymentPeriod=NO_PERIOD_SPECIFIED&pinType=NOT_REQUIRED&returnUrl=http://www.hawaii.com&startingDate=2010-11-23T00:00:46.000-08:00&status=ACTIVE
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: preapprovalKey=PA-3Y550670E9113332T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:49.758-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=dd0bed7292eb6&responseEnvelope.build=1609281
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - SENT: baseAmountList.currency(0).amount=1.00&baseAmountList.currency(0).code=GBP&baseAmountList.currency(1).amount=1.00&baseAmountList.currency(1).code=EUR&convertToCurrencyList.currencyCode(0)=USD&convertToCurrencyList.currencyCode(1)=CAD&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:18 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:48:51.349-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=eb582fd293457&responseEnvelope.build=1609281&estimatedAmountTable.currencyConversionList(0).baseAmount.code=GBP&estimatedAmountTable.currencyConversionList(0).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).amount=1.94&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).amount=2.17&estimatedAmountTable.currencyConversionList(1).baseAmount.code=EUR&estimatedAmountTable.currencyConversionList(1).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).amount=1.32&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).amount=1.47
+Tue 11/23/10 18:18 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: actionType=CREATE&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:39.674-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=2a1ca095caf13&responseEnvelope.build=1609281&payKey=AP-4WB41889AP856393T&paymentExecStatus=CREATED&defaultFundingPlan.fundingPlanId=0&defaultFundingPlan.fundingAmount.code=USD&defaultFundingPlan.fundingAmount.amount=2.00&defaultFundingPlan.backupFundingSource.lastFourOfAccountNumber=1128&defaultFundingPlan.backupFundingSource.type=CREDITCARD&defaultFundingPlan.charge(0).charge.code=USD&defaultFundingPlan.charge(0).charge.amount=2.00&defaultFundingPlan.charge(0).fundingSource.lastFourOfAccountNumber=4228&defaultFundingPlan.charge(0).fundingSource.type=BANK_INSTANT
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&payKey=AP-4WB41889AP856393T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:41.249-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=db9e4e6acb6dd&responseEnvelope.build=1609281
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: payKey=AP-4WB41889AP856393T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:45.279-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=33a0e09ecbcb5&responseEnvelope.build=1609281&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: payKey=AP-4WB41889AP856393T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:46.777-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=9effed80ccc95&responseEnvelope.build=1609281
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: actionType=PAY&cancelUrl=http://www.hawaii.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255612361_per@gmail.com&receiverList.receiver[1].amount=1.00&receiverList.receiver[1].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:51.437-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=c2b6d466cd269&responseEnvelope.build=1609281&payKey=AP-3H072329J3963200T&paymentExecStatus=COMPLETED
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:22 India Standard Time - INFO - SENT: payKey=AP-3H072329J3963200T&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:22 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:53.277-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=955e9e8fce414&responseEnvelope.build=1609281&cancelUrl=http://www.hawaii.edu&currencyCode=USD&paymentInfoList.paymentInfo(0).transactionId=2N2835547T8590805&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(0).receiver.amount=1.00&paymentInfoList.paymentInfo(0).receiver.email=platfo_1255612361_per@gmail.com&paymentInfoList.paymentInfo(0).receiver.primary=false&paymentInfoList.paymentInfo(0).refundedAmount=0.00&paymentInfoList.paymentInfo(0).pendingRefund=false&paymentInfoList.paymentInfo(0).senderTransactionId=7XC03327EY882045B&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).transactionId=60R362177B6051423&paymentInfoList.paymentInfo(1).transactionStatus=COMPLETED&paymentInfoList.paymentInfo(1).receiver.amount=1.00&paymentInfoList.paymentInfo(1).receiver.email=platfo_1255611349_biz@gmail.com&paymentInfoList.paymentInfo(1).receiver.primary=false&paymentInfoList.paymentInfo(1).refundedAmount=0.00&paymentInfoList.paymentInfo(1).pendingRefund=false&paymentInfoList.paymentInfo(1).senderTransactionId=83847057PH4202121&paymentInfoList.paymentInfo(1).senderTransactionStatus=COMPLETED&returnUrl=http://www.hawaii.com&senderEmail=platfo_1255077030_biz@gmail.com&status=COMPLETED&payKey=AP-3H072329J3963200T&actionType=PAY&feesPayer=EACHRECEIVER&reverseAllParallelPaymentsOnError=false&sender.email=platfo_1255077030_biz@gmail.com
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - SENT: currencyCode=USD&payKey=AP-3H072329J3963200T&receiverList.receiver[0].amount=1.00&receiverList.receiver[0].email=platfo_1255611349_biz@gmail.com&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:54.927-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=7c04ed5bcebde&responseEnvelope.build=1609281&currencyCode=USD&refundInfoList.refundInfo(0).receiver.amount=1.00&refundInfoList.refundInfo(0).receiver.email=platfo_1255611349_biz@gmail.com&refundInfoList.refundInfo(0).refundStatus=NO_API_ACCESS_TO_RECEIVER
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - SENT: cancelUrl=http://www.return.edu&clientDetails.applicationId=APP-1JE4291016473214C&clientDetails.deviceId=mydevice&clientDetails.ipAddress=127.0.0.1&currencyCode=USD&endingDate=2011-02-19&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&requestEnvelope.errorLanguage=en_US&requestEnvelope.senderEmail=platfo_1255076101_per@gmail.com&returnUrl=http://www.hawaii.com&startingDate=2010-11-23&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:57.120-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=c7207060cf264&responseEnvelope.build=1609281&preapprovalKey=PA-5P724698K0906810U
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - SENT: preapprovalKey=PA-5P724698K0906810U&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:58.493-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=1f01e888cfa98&responseEnvelope.build=1609281&approved=false&cancelUrl=http://www.return.edu&curPayments=0&curPaymentsAmount=0.00&curPeriodAttempts=0&currencyCode=USD&dateOfMonth=0&dayOfWeek=NO_DAY_SPECIFIED&endingDate=2011-02-19T23:59:56.000-08:00&maxNumberOfPayments=10&maxTotalAmountOfAllPayments=50.00&paymentPeriod=NO_PERIOD_SPECIFIED&pinType=NOT_REQUIRED&returnUrl=http://www.hawaii.com&startingDate=2010-11-23T00:00:56.000-08:00&status=ACTIVE
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - SENT: preapprovalKey=PA-5P724698K0906810U&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:52:59.938-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=4be31470d0024&responseEnvelope.build=1609281
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - SENT: baseAmountList.currency(0).amount=1.00&baseAmountList.currency(0).code=GBP&baseAmountList.currency(1).amount=1.00&baseAmountList.currency(1).code=EUR&convertToCurrencyList.currencyCode(0)=USD&convertToCurrencyList.currencyCode(1)=CAD&requestEnvelope.errorLanguage=en_US&SOURCE=PayPalRubySDKV1.2.0&VERSION=60.0
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+
+Tue 11/23/10 18:23 India Standard Time - INFO - RECEIVED: responseEnvelope.timestamp=2010-11-23T04:53:01.528-08:00&responseEnvelope.ack=Success&responseEnvelope.correlationId=32e8d35bd0611&responseEnvelope.build=1609281&estimatedAmountTable.currencyConversionList(0).baseAmount.code=GBP&estimatedAmountTable.currencyConversionList(0).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(0).amount=1.94&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(0).currencyList.currency(1).amount=2.17&estimatedAmountTable.currencyConversionList(1).baseAmount.code=EUR&estimatedAmountTable.currencyConversionList(1).baseAmount.amount=1.00&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).code=USD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(0).amount=1.32&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).code=CAD&estimatedAmountTable.currencyConversionList(1).currencyList.currency(1).amount=1.47
+Tue 11/23/10 18:23 India Standard Time - INFO - 
+

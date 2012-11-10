@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Set PaymentOption</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+
+<h3 align="center"><u>Pay - Create, Set, Execute API Flow</u></h3>
+<h3 align="center">Set Payment Options - Response</h3>		
+    <table  align="center">
+	<tr>
+		<td>Ack:</td>
+		<td><%= @ack%></td>
+	</tr>
+	<tr>
+		<td>CorrelationId:</td>
+		<td><%= @CorrelationId%></td>
+	</tr>
+	<tr>
+		<td>TimeStamp:</td>
+		<td><%= @timestamp%></td>
+	</tr>
+	<tr>
+		<td>Build:</td>
+		<td><%= @build%></td>
+	</tr>
+	<tr>
+		<td>*<%= link_to "Execute Payment",:controller =>"executepay", :action => "begin", :paykey=> @paykey, :id => @executePaymentOptionLink %></td>
+	</tr>
+	
+    </table> 
+</div>
+</body>
+</html>
+
+
+
+
+
+

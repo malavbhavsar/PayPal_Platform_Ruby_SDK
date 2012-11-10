@@ -1,0 +1,17 @@
+PayPal NVP Web Samples for Ruby on Rails
+Change Log 
+
+=====================================================================================================================================
+Version 1.1 - 25-Oct-2011
+1 - Added two new API scopes(ACCESS_BASIC_PERSONAL_DATA and ACCESS_ADVANCED_PERSONAL_DATA) in RequestPermissions samples
+2 - Added two new APIs(GetBasicPersonalData, GetAdvancedPersonalData)
+=====================================================================================================================================
+Version 1.0.2 - 30-May-2011
+1 - Added four new API scopes in RequestPermissions samples
+=====================================================================================================================================
+Version 1.0.1 - 31-Mar-2011
+1 - Added new API scope in RequestPermissions samples
+=====================================================================================================================================
+Version 1.0.0 - 24-Nov-2010
+1 - SDK for Permissions web service APIs.
+=====================================================================================================================================

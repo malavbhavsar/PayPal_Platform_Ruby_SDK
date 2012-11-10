@@ -1,0 +1,86 @@
+.tab,.tabselect,.tabitem,.note_top{
+display:block;
+width:180px;
+height:30px;
+padding:5px;
+border-top: 1px dotted #E6EAE9;
+}
+.tab{
+
+height:13px;
+text-align:left;
+border:1px solid #CCCCCC;
+width:200px;
+border-top:0px;
+}
+.note_top { 
+	background-image: url(nav_second_bg.gif); 
+	line-height:18px;
+	height:18px; 
+	text-align:center; 
+	font-weight:bold; 
+	font-size:10pt; 
+	color:#000000;     
+	border:1px solid #CCCCCC;
+	width:200px;
+}
+.header
+{
+    background-image: url(nav_second_bg.gif);
+}
+.tabitem{
+background-color:#009900;
+padding-left:15px;
+width:140px;
+}
+.tabselect{
+background-color:#E6EAE9;
+}
+.devcentral
+{
+   
+}
+
+a:hover{
+color:#E6EAE9;
+background-color:#659EC7;
+text-decoration:underline;
+}
+
+#menu{
+	float:left;
+	margin-right:20px;
+	margin-top:70px;
+	margin-left:50px;
+	width: 20%;
+}
+
+#request_form{
+	float: left;
+	width: 70%;
+}
+
+#footer {
+	clear: none;
+}
+
+#main {
+	min-width: 1000px;
+    _width: 1000px;
+}
+
+.tooltip {
+	display: none; 
+	position: absolute; 
+	border-style: solid; 
+	background-color: white; 
+	padding: 20px;
+}
+
+.clear  {
+	clear: left;
+}
+
+#tabselect{color:#000;
+background-color:#E6EAE9;}
+

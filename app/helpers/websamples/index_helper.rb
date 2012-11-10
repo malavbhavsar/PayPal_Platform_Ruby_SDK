@@ -1,0 +1,2 @@
+module Websamples::IndexHelper
+end

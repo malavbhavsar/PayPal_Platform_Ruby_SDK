@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>PayPal Ruby On Rails SDK - Rails error</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+<body alink=#0000FF vlink=#0000FF>
+<div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+<center>
+<br>
+<font size=2 color=black face=Verdana><b>Rails Error</b></font>
+<br><br>
+<b>Rails has encountered this exception!</b><br><br>
+<table width="700">
+	<tr>
+		<td>Exception:</td>
+		<td><%= @longmessage %></td>
+	</tr>
+
+</table>
+</center>
+</div>
+</body>
+</html>
+

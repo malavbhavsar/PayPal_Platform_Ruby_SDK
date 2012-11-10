@@ -1,0 +1,262 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Create Account Business</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+<script type="text/javascript">
+function PrePopulate()
+{
+document.getElementById('AccountType').value = "BUSINESS";
+	document.getElementById('firstname').value = "Bonzop";
+	document.getElementById('middlename').value = "Simore";
+	document.getElementById('lastname').value = "Zaius";
+document.getElementById('dob').value = "1968-01-01Z";
+	document.getElementById('address1').value = "1968 Ape Way";
+	document.getElementById('address2').value = "Apt 123";
+	document.getElementById('city').value = "Austin";
+	document.getElementById('zipcode').value = "78750";
+	document.getElementById('countrycode').value = "US";
+	document.getElementById('citzenshipcountry').value = "US";
+	document.getElementById('phone').value = "5126914160";
+	document.getElementById('url').value = "http://stranger.paypal.com/cgi-bin/ipntest.cgi";
+	document.getElementById('devCentral').value = "Platform.sdk.seller@gmail.com";
+document.getElementById('email').value = "platfo_1255076101_per@gmail.com";
+	document.getElementById('p1').value = "p1";
+	document.getElementById('p2').value = "p2";
+	document.getElementById('p3').value = "p3";
+	document.getElementById('p4').value = "p4";
+	document.getElementById('p5').value = "p5";
+
+document.getElementById('businessname').value = "Bonzop";
+	document.getElementById('bizaddress1').value = "1968 Ape Way";
+	document.getElementById('bizaddress2').value = "Apt 123";
+document.getElementById('bizcity').value = "Austin";
+	document.getElementById('bizzipcode').value = "78750";
+	document.getElementById('bizcountrycode').value = "US";
+	document.getElementById('workphone').value = "5126914160";
+	document.getElementById('category').value = "1001";
+	document.getElementById('subcategory').value = "2001";
+	document.getElementById('customerServicePhone').value = "5126914160";
+	document.getElementById('customerServiceEmail').value = "platfo_1255076101_per@gmail.com";
+	document.getElementById('webSite').value = "https://www.x.com";
+	document.getElementById('averagePrice').value = "1.00";
+document.getElementById('averageMonthlyVolume').value = "100";
+	document.getElementById('percentageRevenueFromOnline').value = "60";
+	document.getElementById('salesVenue').value = "WEB";
+		document.getElementById('dateOfEstablishment').value = "2000-01-01";
+}
+</script>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+
+<center>
+<h3><b> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Create Account Business</b></h3>
+	<a onclick="PrePopulate()"><span>Populate default values</span></a>
+</center>
+
+  <%=  form_tag (createaccountBusiness_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %>
+<table  align="center">
+	<tr>
+ 		<td>AccountType:</td>
+		<td><%= text_field_tag( "AccountType", value = '',:size => 50, :maxlength => 80 ) %> </td>
+	</tr>
+	<tr>
+ 		<td>Salutation:</td>
+		<td><%=salutation_select_for(:createbusiness) %></td>
+	</tr>
+	<tr>
+ 		<td><label for="firstname">First Name:</label></td>
+		<td><%= text_field_tag( "firstname", value = '',:size => 50, :maxlength => 80 ) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="middlename">Middle Name:</label></td>
+		<td><%= text_field_tag( "middlename", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="lastname">Last Name:</label></td>
+		<td><%= text_field_tag( "lastname", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="dob">DOB:</label></td>
+		<td><%= text_field_tag( "dob", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="address1">Address 1:</label></td>
+		<td><%= text_field_tag( "address1", value = '',:size => 50, :maxlength => 80 ) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="address2">Address 2:</label></td>
+		<td><%= text_field_tag( "address2", value = '',:size => 50, :maxlength => 80 ) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="city">City:</label></td>
+		<td><%= text_field_tag( "city", value = '',:size => 50 , :maxlength => 80 ) %> </td>
+	</tr>
+
+	<tr>
+ 		<td>State:</td>
+		<td><%=state_select_for(:createbusiness) %></td>
+	</tr>
+
+	<tr>
+ 		<td><label for="zipcode">ZIP Code:</label></td>
+		<td><%= text_field_tag( "zipcode", value = '',:size => 50, :maxlength => 80) %>(5 or 9 digits) </td>
+	</tr>
+	<tr>
+ 		<td><label for="countrycode">Country:</label></td>
+		<td><%= text_field_tag( "countrycode", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="citzenshipcountry">CitizenshipCountryCode:</label></td>
+		<td><%= text_field_tag( "citzenshipcountry", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="phone">Contact Phone Number:</label></td>
+		<td><%= text_field_tag( "phone", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="url">Notification URL:</label></td>
+		<td><%= text_field_tag( "url", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="p1">partnerField1:</label></td>
+		<td><%= text_field_tag( "p1", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="p2">partnerField2:</label></td>
+		<td><%= text_field_tag( "p2", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="p3">partnerField3:</label></td>
+		<td><%= text_field_tag( "p3", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="p4">partnerField4:</label></td>
+		<td><%= text_field_tag( "p4", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="p5">partnerField5:</label></td>
+		<td><%= text_field_tag( "p5", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td>currencyCode:</td>
+		<td><%=currency_select_for(:createbusiness) %></td>
+	</tr>
+	<tr>
+ 		<td><label for="devCentral">Sandbox Developer Central <br>Email(Applicable <br> only for Sandbox):</label></td>
+		<td><%= text_field_tag( "devCentral", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td style="width:300px"><label for="email">Email:</label></td>
+		<td align="left" style="width: 160px"><%= text_field_tag( "email", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+
+
+	<tr>
+		<td class="thinfield label" colspan="4" >
+			<p align="left">
+			<b>Business Info</b>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+ 		<td><label for="businessname">businessName:</label></td>
+		<td><%= text_field_tag( "businessname", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="bizaddress1">BizAddressline1:</label></td>
+		<td><%= text_field_tag( "bizaddress1", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="bizaddress2">BizAddressline2:</label></td>
+		<td><%= text_field_tag( "bizaddress2", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="bizcity">city:</label></td>
+		<td><%= text_field_tag( "bizcity", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td>State:</td><td><%=biz_state_select_for(:createbusiness) %></td>
+	</tr>
+	<tr>
+ 		<td><label for="bizzipcode">ZIP Code:</label></td>
+		<td><%= text_field_tag( "bizzipcode", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="bizcountrycode">Country:</label></td>
+		<td><%= text_field_tag( "bizcountrycode", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="workphone">workPhone:</label></td>
+		<td><%= text_field_tag( "workphone", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="category">Category:</label></td>
+		<td><%= text_field_tag( "category", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="subcategory">SubCategory:</label></td>
+		<td><%= text_field_tag( "subcategory", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="customerServicePhone">customerServicePhone:</label></td>
+		<td><%= text_field_tag( "customerServicePhone", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="customerServiceEmail">customerServiceEmail:</label></td>
+		<td><%= text_field_tag( "customerServiceEmail", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="webSite">webSite:</label></td>
+		<td><%= text_field_tag( "webSite", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="dateOfEstablishment">dateOfEstablishment:</label></td>
+		<td><%= text_field_tag( "dateOfEstablishment", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td>businessType:</td><td><%=biz_type(:createbusiness) %></td>
+	</tr>
+	<tr>
+ 		<td><label for="averagePrice">averagePrice:</label></td>
+		<td><%= text_field_tag( "averagePrice", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="averageMonthlyVolume">averageMonthlyVolume:</label></td>
+		<td><%= text_field_tag( "averageMonthlyVolume", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="percentageRevenueFromOnline">percentageRevenueFromOnline:</label></td>
+		<td><%= text_field_tag( "percentageRevenueFromOnline", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="salesVenue">salesVenue:</label></td>
+		<td><%= text_field_tag( "salesVenue", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	</table>
+<table align="center">
+	<tr>
+      	<td align="center">
+<a class="pop-button primary" onclick="Form1.submit();" id="Submit"><span>Submit</span></a>
+</td>
+	</tr>
+	
+</table>
+</div>
+</body>
+</html>
+<%end%>
+
+

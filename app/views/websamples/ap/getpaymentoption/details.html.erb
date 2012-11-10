@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Get PaymentOption</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+<h3 align="center">AP - Get Payment Option Receipt </h3>		
+    <table  align="center">
+      <tr>
+		<td>Email Header Image URL:</td>
+		<td><%=@emailHeaderImageUrl%></td>
+	</tr>
+      <tr>
+		<td>Email Marketing Image URL:</td>
+		<td><%=@emailMarketingImageUrl%></td>
+	</tr>
+      <tr>
+		<td>InstitutionId:</td>
+		<td><%=@institutionId%></td>
+	</tr>
+      <tr>
+		<td>Institution CustomerId:</td>
+		<td><%=@institutionCustomerId%></td>
+	</tr>
+      <tr>
+		<td>Email:</td>
+		<td><%=@email%></td>
+	</tr>
+      <tr>
+		<td>Country Code:</td>
+		<td><%=@countryCode%></td>
+	</tr>
+      <tr>
+		<td>Display Name:</td>
+		<td><%=@TransactionStatus%></td>
+	</tr>
+      <tr>
+		<td>First Name:</td>
+		<td><%=@displayName%></td>
+	</tr>
+      <tr>
+		<td>Last Name:</td>
+		<td><%=@lastName%></td>
+	</tr>
+	
+    </table> 
+</div>
+</body>
+</html>

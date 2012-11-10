@@ -1,0 +1,210 @@
+<html>
+	<head>
+		<title>PayPal Platform Ruby on Rails SDK</title>
+	    <style type="text/css">
+			body {				
+				font: normal .7em "Verdana", "Arial", sans-serif;
+				margin: 15px 10px;
+				width: 800px;
+				color: #333333;
+			}
+			ul, ol {
+				padding:0 0 0 30px;
+			}
+			pre {
+				font-size: 120%;
+			}
+			a {
+				color: #369;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			p {
+				margin: 10;
+				padding-top: 10px;				
+			}
+			h1, h2, h3, h4, h5, h6 {
+				color:#28426E;
+				margin-bottom:0.5em !important;
+			}
+			h2, h3 {
+				color:#E27133 !important;				
+				font-weight:bold;				
+				margin: 25px 0 0;
+			}
+			h1 {
+				font-style:italic;
+				line-height:1em;
+				font-size:22pt;
+			}
+			li {
+				padding-top:3px;
+			}
+			hr {
+				background-color:#CCCCCC;
+				border:0 none;
+				height:1px;
+			}
+		</style>
+    </head>
+<body>
+	<h1 align='center'>PayPal Platform Ruby on Rails SDK</h1>
+	<br/>
+	<h2>Table of contents</h2>
+	<ul>
+		<li><a href='#overview'><b>Overview</b></a></li>
+		<li><a href='#prerequisites'><b>Prerequisites</b></a></li>
+		<li><a href='#contents'>SDK contents</a></li>				
+		<li><a href='#samples'><b>Running the samples</b></a></li>
+		<li><a href='#using'>Integrating the SDK</a></li>
+		<li><a href='#logging'>Application logging</a></li>				
+		<li><a href='#configuration'>Property files and configuration</a></li>
+		<li><a href='#troubleshooting'>Troubleshooting tips</a></li>
+		<li><a href='#documentation'>Documentation and support</a></li>
+		<li><a href='#licensing'>Licensing</a></li>		
+	</ul>
+	<br/><br/>
+
+<a name='overview'></a>
+<h2>Overview</h2>
+<p>PayPal's Ruby on Rails Software Developer Kit (SDK) eases the process of integrating PayPal's financial services into your application by providing a small footprint of three plugin files. The SDK comes with web samples written for Rails which illustrate how to use PayPal's <b> NVP Adaptive Web Services</b> including examples for Create account, Add Payment sources, Pay (parallel, chained), Payment Details, Preapproval, Preapproval Details, Cancel Preapproval, Refund etc. The sample applications do not use a database and hence it is not a typical Rails application.  </p>
+
+<p>
+The SDK has three main plugin files - caller.rb, profile.rb, and utils.rb located under the vendor\plugins\PayPalSDK\lib folder. The plug-in supports only 3-token credentials at this time.</p>
+
+<p>The latest upgrades, FAQs and announcements can always be found at: <a href='https://x.com/' target='_blank'>Tools for PayPal Developers</a></p>
+<hr>
+		
+<a name='prerequisites'></a>
+<h2>Prerequisites</h2>
+
+<h4>Software</h4>
+<ul>
+<li>Ruby 1.8.7 or Higher - <a href='http://www.ruby-lang.org/en/downloads'><b>Download</b></a> (Note: The code does not depend on 1.8.7 features but was developed using this version, it may very well work with earlier versions.) </li>
+<li>Rails 3.0.1 - <a href=''><b>Download</b></a> (Note: The code does not depend on 3.0.1 features but was developed using this version, it may very well work with earlier versions.) </li>
+</ul>
+
+<h4>PayPal account</h4>
+<ul>
+    <li>Live business account (PayPal real time environment) - Sign up for an account at <a href='https://www.paypal.com/' target='_blank'>paypal.com</a></li>
+    <li>Sandbox business account (PayPal test environment) - Sign up for an account at <a href='https://developer.paypal.com/' target='_blank'>developer.paypal.com</a>  
+    	<br/>(view the <a href='http://www.youtube.com/v/lDzCVtBLDu4&hl=en_US&fs=1&' target='_blank'><b>account creation demo</b></a> or click <a href='https://www.x.com/docs/DOC-1379' target='_blank'><b>here</b></a> for help)</li>
+    <li>For assistance register at <a href='http://x.com' target='_blank'>x.com</a></li>
+</ul>
+<hr>
+
+
+
+<a name='contents'></a>
+<h2>SDK contents</h2>
+<ul>
+	<li><b>app</b> - Contains the sample application code organized as models, views and controllers.</li>
+	<li><b>doc</b> - This directory is where your application documentation will be stored.</li>
+	<li><b>public</b> - The directory available for the web server. Contains subdirectories for images, stylesheets,
+  and javascripts. Also contains the dispatchers and the default HTML files. This should be
+  set as the DOCUMENT_ROOT of your web server.</li>
+	<li><b>script</b> - Helper scripts for automation and generation.</li>
+	<li><b>vendor\plugins\src\lib</b> - Contains the SDK's core library files.</li>
+</ul>
+<a name='tested'></a>
+<h3>Tested versions</h3>
+	The SDK and the sample applications have been tested on Ruby 1.8.7 with Rails 3.0.1
+<hr>
+    
+<a name='samples'></a>
+<h2>Running the samples</h2>
+The download bundle from <a href='https://www.x.com/community/ppx/sdks' target='_blank'><b>x.com</b></a> comes with sample applications that can get you quickly started on using the SDK. These can be run as described in the next section. You can edit the <a href='#configuration'>application configuration</a> to suit your need and use the <a href='#logging'>log file</a> to troubleshoot the application.
+
+<h4>Commandline samples</h4>
+<p>
+To run the commandline samples,
+<ol>
+	<li>Unzip the file for example to C:\rubyapps\.</li>
+	<li>Browse to the folder in command prompt (Example:cd C:\rubyapps\PayPal_Platform_Ruby_SDK\app\controllers\commandline\&lt;samplename&gt;\).</li>
+	<li>Run the commandline app by running run.bat OR run.sh on Windows/Linux environments respectively</li>
+</ol>
+</p>
+
+<h4>Web samples</h4>
+<p>
+To run the web samples,
+<ol>
+	<li>Unzip the file for example to C:\rubyapps\.</li>
+	<li>Browse through the folder in command prompt (Example:C:\rubyapps\PayPal_Platform_Ruby_SDK).</li>
+	<li>Type <b>rails server</b>. This will start the application on the mongrel server (if available) or ruby's inbuilt WEBrick server.</li>
+	<li>Open a browser and type http://IP ADDRESS of your machine:3000/ on the address bar and hit return button. Example: http://localhost:3000/</li>
+</ol>
+</p>
+<hr>
+
+<a name='using'></a>
+<h2>Integrating the SDK</h2>
+You can use the SDK files at vendor\plugins to write your own application. To do this,
+<ul>
+	<li>Create a new Ruby on Rails application.</li>
+	<li>Copy caller.rb, profile.rb, and utils.rb to your vendor\plugins folder.</li>
+	<li>Program as per the model shown below.</li>
+</ul>
+<h3>Adaptive SDK - Programming Model</h3>
+<pre>      
+
+	// <b>Set the endpoint</b>
+	@@ep["SERVICE"] = "/AdaptivePayments/PaymentDetails"
+
+	// <b>Create a new caller object</b>
+	@caller = PayPalSDKCallers::Caller.new(false) 
+
+	// <b>Invoke a business method</b>
+	@transaction_paydetails = @caller.call(= { 
+		"requestEnvelope.errorLanguage" => "en_US",
+		"payKey" =>"AP-640578883N1247527"
+	}
+	if (@transaction_paydetails.success?)
+		// <b>Parse response @transaction_paydetails.response</b>
+</pre>
+<hr>
+
+<a name='logging'></a>
+<h2>Application logging</h2>
+<p>The SDK logs all request/response message and other debug messages to the log file at <b>log\PayPal.log</b> for web samples and <b>logs\PayPal.log</b> for the commandline samples. </p>
+<hr>
+
+<a name='configuration'></a>
+<h2>Property files and configuration</h2>
+<p>The SDK ships with default configuration values so that the samples work out of the box. If you to wish to change these parameters, you can edit the <b>profile.rb</b> file. </p>
+
+<p>The different configuration sections available in this file are: </p>
+<ul>
+	<li><b>headers</b> - Set 3-token credentials and Application ID.</li>
+	<li><b>endpoints</b> - Service endpoint. Modify this parameter to test against sandbox/live site.</li>
+	<li><b>client_details</b> - Client details sent as part of the request.</li>
+	<li><b>proxy_info</b> - Set proxy server configuration if a proxy server sits between your web server and PayPal API servers.</li>
+	<li><b>client_info</b> - Set service version info and client id (used for request tracking).</li>
+</ul>
+
+<hr>
+
+<a name='troubleshooting'></a>
+<h2>Troubleshooting tips</h2>
+<ul>
+<li>I get a "This application has failed to start because sqllite3.dll was not found" message <p>Install sqlite3-ruby using "gem install sqlite3-ruby" and copy sqlite3.dll to a location where ruby looks for library files. Some possible locations would be your windows system folder or the bin folder of your Ruby installation.</p></li>
+</ul>
+<hr>	
+
+<a name='documentation'></a>
+<h2>Documentation and support</h2>
+<ul>
+	<li><a href='https://www.x.com' target='_blank'>PayPal developer Center</a></li>
+	<li><a href='https://www.paypal.com/mts' target='_blank'>Technical Support</a></li>
+</ul>
+<hr>
+
+<a name='licensing'></a>
+<h2>Licensing</h2>
+<p>Read the <a href='licenses\LICENSE.txt'>license</a> file for important legal information regarding the PayPal
+SDK. There are important points you must consider when choosing to bundle this SDK within your application.</p>
+<br/>Copyright (c) 2009 PayPal, Inc.
+</body>
+</html>

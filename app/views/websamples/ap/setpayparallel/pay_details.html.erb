@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Pay Parallel</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+
+
+<h3><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Payment Details</b></h3>
+		
+    <table  align="center">
+	<tr>
+		<td>Transaction Status:</td>
+		<td><%=@TransactionStatus%></td>
+	</tr>
+	<tr>
+		<td>Pay Key:</td>
+		<td><%=@paykey%></td>
+	</tr>
+	<tr>
+		<td>Sender Email:</td>
+		<td><%=@senderEmai%></td>
+	</tr>
+	<tr>
+		<td>Action Type:</td>
+		<td><%=@actionType%></td>
+	</tr>
+	<tr>
+		<td>Fees Payer:</td>
+		<td><%=@feesPayer%></td>
+	</tr>
+	<tr>
+		<td>Currency Code:</td>
+		<td><%=@currencyCode%></td>
+	</tr>
+	    </table> 
+</div>
+</body>
+</html>

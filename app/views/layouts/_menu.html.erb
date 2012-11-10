@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+		<title>Paypal Pladform SDK Menu Page</title>
+		<%= stylesheet_link_tag "style"%>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<div class="note_top">
+					Adaptive Payment API
+				</div>
+				<%= link_to "Pay",{:controller =>"websamples/ap/setpay" , :action => "begin" },{:class => "tab"},{:id => 'SetPayLink'} %>
+				<%= link_to "Pay - Parallel",{:controller =>"websamples/ap/setpayparallel" , :action => "begin" },{:class => "tab"},{:id => 'SetPayParallelLink'} %>
+				<%= link_to "Pay - Chained",{:controller =>"websamples/ap/setpaychained" , :action => "begin" }, {:class => "tab"},{:id => 'SetPayChainedLink'} %>
+				<%= link_to "Pay - Create,Set,Excecute API Flow",{:controller =>"websamples/ap/createpay" , :action => "begin" },{:class => "tab"},         {:id => 'CreatePayChainedLink'} %>
+				<%= link_to "PaymentDetails",{:controller =>"websamples/ap/paymentdetails" , :action => "begin" }, {:class => "tab"},{:id => 'PaymentDetailsLink'} %>
+				<%= link_to "Preapproval",{:controller =>"websamples/ap/setpreapproval" , :action => "preapproval" },{:class => "tab"},{:id => 'SetPreapprovalLink'} %>
+				<%= link_to "Preapproval Details",{:controller =>"websamples/ap/preapprovaldetails" , :action => "begin" },{:class => "tab"},          {:id => 'PreapprovalDeatilsLink'} %>
+				<%= link_to "Refund",{:controller =>"websamples/ap/refund" , :action => "refund" }, {:class => "tab"},{:id => 'RefundLink'} %>
+				<%= link_to "CancelPreapproval",{:controller =>"websamples/ap/cancelpreapproval" , :action => "cancelPreapproval" },{:class => "tab"},{:id => 'cancelPreapprovalLink'} %>
+				<%= link_to "SetConvertCurrency",{:controller =>"websamples/ap/convertcurrency" , :action => "begin" },{:class => "tab"},{:id => 'convertcurrencyLink'} %>
+				<%= link_to "GetPaymentOption",{:controller =>"websamples/ap/getpaymentoption" , :action => "begin" },{:class => "tab"},{:id => 'GetPaymentOptionLink'} %>
+				<div class="note_top">
+					Adaptive Account API
+				</div>
+				<%= link_to "CreateAccount(Personal,Premium)",{:controller =>"websamples/aa/createaccount" , :action => "begin" },{:class => "tab"},           {:id => 'CreateAccountLink'} %>
+				<%= link_to "CreateAccount - (Business)",{:controller =>"websamples/aa/createaccountbusiness" , :action => "begin" },{:class => "tab"},           {:id => 'CreateAccountBusinessLink'} %>
+				<%= link_to "Add Bank Account -Web Redirect",{:controller =>"websamples/aa/addbankaccount" , :action => "begin" },{:class => "tab"}  ,         {:id => 'AddBankAccountLink'} %>
+				<%= link_to "Add Bank Account - Direct",{:controller =>"websamples/aa/addbankaccountdirect" , :action => "begin" },{:class => "tab"} ,          {:id => 'AddBankAccountDirectLink'} %>
+				<%= link_to "Add Payment Card - Web Redirect",{:controller =>"websamples/aa/addpaymentcard" , :action => "begin" }, {:class => "tab"},         {:id => 'AddPaymentCardLink'} %>
+				<%= link_to "Add Payment Card - Direct",{:controller =>"websamples/aa/addpaymentcarddirect" , :action => "begin" }, {:class => "tab"} ,         {:id => 'AddPaymentCardDirectLink'} %>
+				<%= link_to "Set Funding Source Confirm",{:controller =>"websamples/aa/setfundingsourceconfirmed" , :action => "begin" },  {:class => "tab"},         {:id => 'SetFundingsourceConfirmedLink'} %>
+				<%= link_to "Get Verified Status",{:controller =>"websamples/aa/getverifiedstatus" , :action => "begin" },{:class => "tab"} ,          {:id => 'GetVerifiedStatusLink'} %>
+				<div class="note_top">
+					<font color="darkred"> Permissions(Limited Beta)</font>
+				</div>
+				<%= link_to "RequestPermissions",{:controller =>"websamples/permission/requestpermissions" , :action => "begin" },{:class => "tab"},{:id => 'RequestpermissionsLink'} %>
+				<%= link_to "GetAccessToken",{:controller =>"websamples/permission/getaccesstoken" , :action => "begin" },{:class => "tab"},{:id => 'GetAccessTokenLink'} %>
+				<%= link_to "GetPermissions",{:controller =>"websamples/permission/getpermissions" , :action => "begin" },{:class => "tab"},{:id => 'GetPermissionsLink'} %>
+				<%= link_to "CancelPermissions",{:controller =>"websamples/permission/cancelpermission" , :action => "begin" },{:class => "tab"},{:id => 'cancelPermissionsLink'} %>
+				<%= link_to "GetBasicPersonalData",{:controller =>"websamples/permission/getbasicpersonaldata" , :action => "begin" },{:class => "tab"},{:id => 'getBasicPersonalDataLink'} %>
+				<%= link_to "GetAdvancedPersonalData",{:controller =>"websamples/permission/getadvancedpersonaldata" , :action => "begin" },{:class => "tab"},{:id => 'getAdvancedPersonalDataLink'} %>
+			</ul>
+		</div>
+	</body>
+</html>

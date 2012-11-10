@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Set Preapproval</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+<script type="text/javascript">
+function PrePopulate()
+{
+	document.getElementById('email').value = "platfo_1255077030_biz@gmail.com";
+	document.getElementById('maxNumberOfPayments').value = "10";
+	document.getElementById('maxTotalAmountOfAllPayments').value = "50.0";
+	document.getElementById('amount_0').value = "1.00";
+	document.getElementById('amount_1').value = "1.00";
+}
+</script>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+<center>
+		<h3><b> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Adaptive Payments - Preapproval</b></h3>
+		<a onclick="PrePopulate()"><span>Populate default values</span></a>
+				</center>
+				<br/>
+
+<%  form_tag (preapproval_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %> 
+ 
+<table  align="center">
+	<tr>
+ 		<td><label for="email">Sender's Email:</label></td>
+		<td><%= text_field_tag( "email", value = '',:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="startDate">Starting Date:</label></td>
+		<td><%= text_field_tag( "startDate", value = @startdate,:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="endDate">End Date:</label></td>
+		<td><%= text_field_tag( "endDate", value = @enddate,:size => 75) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="maxNumberOfPayments">Maximum Number of Payments:</label></td>
+		<td><%= text_field_tag( "maxNumberOfPayments", value = '',:size => 50) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="maxTotalAmountOfAllPayments">Maximum Total Amount:</label></td>
+		<td><%= text_field_tag( "maxTotalAmountOfAllPayments", value = '',:size => 50) %> </td>
+	</tr>
+	<tr>
+ 		<td>currencyCode:</td><td><%=currency_select_for(:setpreapproval) %></td>
+	</tr> 
+	<tr>
+	</tr>
+</table>
+<table align="center">
+	<tr>
+			<td align="center">
+      	<a class="pop-button primary" onclick="Form1.submit();" id="Submit"><span>Submit</span></a>
+		</td>
+	</tr>
+	</table>
+</div>
+</body>
+</html>
+<% end %>
+
+

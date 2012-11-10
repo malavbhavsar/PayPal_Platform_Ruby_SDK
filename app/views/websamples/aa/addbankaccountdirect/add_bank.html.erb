@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Add Bank Account Direct</title>
+<%= stylesheet_link_tag "style"%>
+</head>
+<script type="text/javascript">
+function PrePopulate()
+{
+	document.getElementById('email').value = "platfo@paypal.com";
+	document.getElementById('BankCountryCode').value = "US";
+	document.getElementById('BankName').value = "Huntington Bank";
+	document.getElementById('RoutingNumber').value = "021473030";
+	document.getElementById('BankAccountNumber').value = "162951";
+}
+</script>
+
+<body>
+        <div id="jive-wrapper">
+            <div id="jive-header">
+                <div id="logo">
+                    <span style="float: right; height: 30px;">Login to <a href="https://developer.paypal.com">PayPal sandbox</a></span>
+                    <a title="Paypal X Home" href="#" id="web_pageheader_anchor_index"><%= image_tag 'paypal_x_logo.gif', :alt => 'Paypal X',:border=>'0', :height=>'28' %></a>
+                </div>
+            </div><h1>&nbsp;</h1>
+        </div>
+<%= render :partial => "layouts/menu" %>
+
+<div id="request_form">
+<center>
+	<h3><b>  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Add Bank Account Direct</b></h3>
+	<a onclick="PrePopulate()"><span>Populate default values</span></a>
+</center>
+<br/>
+  <%=  form_tag (addbankDirect_path, :method=>'post', :multipart => true, :id => 'Form1', :name => 'Form1') do %><table  align="center">
+	<tr>
+ 		<td><label for="email">email Id:</label></td>
+		<td><%= text_field_tag( "email", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="CreateAccountKey">Create Account Key:</label></td>
+		<td><%= text_field_tag( "CreateAccountKey", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="BankCountryCode">Bank Country Code:</label></td>
+		<td><%= text_field_tag( "BankCountryCode", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="BankName">Bank Name:</label></td>
+		<td><%= text_field_tag( "BankName", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="RoutingNumber">Routing Number:</label></td>
+		<td><%= text_field_tag( "RoutingNumber", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td><label for="BankAccountNumber">Bank Account Number:</label></td>
+		<td><%= text_field_tag( "BankAccountNumber", value = '',:size => 50, :maxlength => 80) %> </td>
+	</tr>
+	<tr>
+ 		<td>Account type:</td><td><%= account_type(:addBankAccountDirect) %></td>
+	</tr>
+	<tr>
+ 		<td>confirmationType:</td><td><%=confirmation_type_direct(:addBankAccountDirect) %></td>
+	</tr>
+	</table>
+<table align="center">
+	<tr>
+      	<td align="center">
+<a class="pop-button primary" onclick="Form1.submit();" id="Submit"><span>Submit</span></a>
+</td>
+	</tr>
+	
+</table>
+</div>
+</body>
+</html>
+<%end%>
+
+
+
