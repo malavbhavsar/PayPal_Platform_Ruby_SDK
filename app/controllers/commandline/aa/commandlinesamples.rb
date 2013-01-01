@@ -39,7 +39,7 @@ require 'singleton'
       @@MyLog = Log4r::Logger.new("paypallog")
       # note: The path prepended to filename is based on Rails path structure. 
       Log4r::FileOutputter.new('paypal_log',
-                       :filename=> "logs/#{filename}",
+                       :filename=> "log/#{filename}",
                        :trunc=>false,
                        :formatter=> MyFormatter)
       @@MyLog.add('paypal_log')
@@ -65,9 +65,9 @@ class MyFormatter < Log4r::Formatter
       @@PayPalLog.info "SENT: #{CGI.unescape(req_data)}"
       @@PayPalLog.info "\n"
       contents, unparseddata = http.post2(@@endpoints["SERVICE"], req_data, @@headers)
-      @@PayPalLog.info "RECEIVED: #{CGI.unescape(unparseddata)}"
+      #@@PayPalLog.info "RECEIVED: #{CGI.unescape(unparseddata)}"
       @@PayPalLog.info "\n"
-      data = CGI::parse(unparseddata)
+      data = CGI::parse(contents.body)
   end    
     
 
@@ -111,10 +111,9 @@ class MyFormatter < Log4r::Formatter
              "emailAddress"=>"platfo-""#{@email}""@paypal.com"
   }
   data=call(req)
-
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       @@emailAddress1 ="platfo-""#{@email}""@paypal.com"
-      @@createAccountKey1 =data["createAccountKey"].to_s
+      @@createAccountKey1 =data["createAccountKey"][0].to_s
       puts "CreateAccount Successful!" 
     else
       puts "Transaction CreateAccount Failed:"
@@ -185,9 +184,9 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       @@emailAddress2 ="platfo-""#{@email}""@paypal.com"
-      @@createAccountKey2 =data["createAccountKey"].to_s
+      @@createAccountKey2 =data["createAccountKey"][0].to_s
       puts "CreateAccount Business API call Successful!" 
     else
       puts "Transaction CreateAccount Business Failed:"
@@ -222,7 +221,7 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Add bank AccountAPI call Successful!" 
     else
       puts "Transaction add bank Failed:"
@@ -259,7 +258,7 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Add bank Account Direct API call Successful!" 
     else
       puts "Transaction add bank direct Failed:"
@@ -299,7 +298,7 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Add payment card API call Successful!" 
     else
       puts "Transaction payment card Failed:"
@@ -344,7 +343,7 @@ end
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Add payment card direct API call Successful!" 
     else
       puts "Transaction add payment card direct Failed:"
@@ -376,7 +375,7 @@ end
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Get Verified Status  Successful!" 
     else
       puts "Transaction  Get Verified Status Failed:"
@@ -391,7 +390,7 @@ create_account_business
 add_bank_account
 add_bank_account_direct
 add_payment_card
-#add_payment_card_direct
+add_payment_card_direct
 set_fundingsource_confirmed
 get_verified_status
 

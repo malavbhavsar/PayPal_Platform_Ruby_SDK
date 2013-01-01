@@ -24,7 +24,7 @@ require 'singleton'
       @@MyLog = Log4r::Logger.new("paypallog")
       # note: The path prepended to filename is based on Rails path structure. 
       Log4r::FileOutputter.new('paypal_log',
-                       :filename=> "logs/#{filename}",
+                       :filename=> "log/#{filename}",
                        :trunc=>false,
                        :formatter=> MyFormatter)
       @@MyLog.add('paypal_log')
@@ -53,9 +53,9 @@ class MyFormatter < Log4r::Formatter
       @@PayPalLog.info "SENT: #{CGI.unescape(req_data)}"
        @@PayPalLog.info "\n"
       contents, unparseddata = http.post2(@@endpoints["SERVICE"], req_data, @@headers)
-      @@PayPalLog.info "RECEIVED: #{CGI.unescape(unparseddata)}"
+      #@@PayPalLog.info "RECEIVED: #{CGI.unescape(unparseddata)}"
        @@PayPalLog.info "\n"
-      data = CGI::parse(unparseddata)
+      data = CGI::parse(contents.body)
   end    
     
 
@@ -81,9 +81,9 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
-      @@createPaykey= data["payKey"]
-      puts "Transaction create Pay successfull! paykey is #{data["payKey"]}" 
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
+      @@createPaykey= data["payKey"][0]
+      puts "Transaction create Pay successfull! paykey is #{data["payKey"][0]}"
     else
       puts "Transaction Create Pay Failed:"
       puts "error Id:#{data["error(0).errorId"]}"
@@ -105,7 +105,7 @@ class MyFormatter < Log4r::Formatter
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
       puts "Transaction SetPaymentOption successfull!" 
     else
       puts "Transaction SetPaymentOption Option Failed:"
@@ -125,8 +125,8 @@ class MyFormatter < Log4r::Formatter
      }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
-      if(data["paymentExecStatus"].to_s=="COMPLETED")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
+      if(data["paymentExecStatus"][0].to_s=="COMPLETED")
         puts "Transaction ExcecutePayment successfull!" 
       end
     else
@@ -147,7 +147,7 @@ class MyFormatter < Log4r::Formatter
      }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
         puts "Transaction GetPaymentOption successfull!" 
     else
       puts "Transaction GetPaymentOption Failed:"
@@ -179,9 +179,9 @@ end
   }
   data=call(req)
 
-    if(data["responseEnvelope.ack"].to_s=="Success")
-      @@paykey= data["payKey"]
-      puts "Transaction Pay successfull! paykey is #{data["payKey"]}" 
+    if(data["responseEnvelope.ack"][0].to_s=="Success")
+      @@paykey= data["payKey"][0]
+      puts "Transaction Pay successfull! paykey is #{data["payKey"][0]}"
     else
       puts "Transaction Pay Failed:"
       puts "error Id:#{data["error(0).errorId"]}"
@@ -198,7 +198,7 @@ def payDetails
       "payKey" =>@@paykey
   }
   data=call(req)  
-  if(data["responseEnvelope.ack"].to_s=="Success")
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
     puts "Transaction PaymentDetails is successfull!" 
   else
     puts "Transaction PaymentDetails Failed:"
@@ -219,7 +219,7 @@ def refund
       "receiverList.receiver[0].amount"=>"1.00"
   }
   data=call(req)
-  if(data["responseEnvelope.ack"].to_s=="Success")
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
     puts "Refund Transaction is successfull!" 
   else
     puts "Refund Transaction Failed:"
@@ -244,16 +244,16 @@ def preapproval
       "cancelUrl"=>"http://www.return.edu",
       "currencyCode"=>"USD",
       "startingDate" =>startdate,
-      "endingDate" => "2011-02-19",
+      "endingDate" => enddate,
       "maxNumberOfPayments" => "10",
       "maxTotalAmountOfAllPayments" => "50.00",
       "requestEnvelope.senderEmail"=>"platfo_1255076101_per@gmail.com"
       
   }
   data=call(req)
-  if(data["responseEnvelope.ack"].to_s=="Success")
-    @@preapprovalKey=data["preapprovalKey"]
-    puts "Preapproval Transaction is successfull! preapprovalKey is #{data["preapprovalKey"]}" 
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
+    @@preapprovalKey=data["preapprovalKey"][0]
+    puts "Preapproval Transaction is successfull! preapprovalKey is #{data["preapprovalKey"][0]}"
   else
     puts "Preapproval Transaction Failed:"
     puts "error Id:#{data["error(0).errorId"]}"
@@ -270,7 +270,7 @@ def preapprovalDeatils
        "preapprovalKey" => @@preapprovalKey
   }
   data=call(req)
-  if(data["responseEnvelope.ack"].to_s=="Success")
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
     puts "PreapprovalDetails Transaction Successful!" 
   else
     puts "PreapprovalDetails Transaction Failed:"
@@ -291,7 +291,7 @@ def cancelPreapproval
        "preapprovalKey" => @@preapprovalKey
   }
   data=call(req)
-  if(data["responseEnvelope.ack"].to_s=="Success")
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
     puts "CancelPreapproval Transaction Successful!" 
   else
     puts "CancelPreapproval Transaction Failed:"
@@ -314,7 +314,7 @@ def convertCurrency
       "convertToCurrencyList.currencyCode(1)"=>"CAD"
   }
   data=call(req)
-  if(data["responseEnvelope.ack"].to_s=="Success")
+  if(data["responseEnvelope.ack"][0].to_s=="Success")
     puts "ConvertCurrency Transaction Successful!" 
   else
     puts "ConvertCurrency Transaction Failed:"
